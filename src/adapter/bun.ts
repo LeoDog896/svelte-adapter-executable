@@ -21,8 +21,9 @@ export default function bunAdapter(options: BunBuilderOptions): UnbrandedAdapter
 
     return {
         ...constructedAdapter,
-        adapt(builder) {
-            constructedAdapter.adapt(builder);
+        async adapt(builder) {
+            // Wait for the node app to be constructed; it will be available at `tempOutDir`
+            await constructedAdapter.adapt(builder);
             // TODO: build construction
         }
     }
