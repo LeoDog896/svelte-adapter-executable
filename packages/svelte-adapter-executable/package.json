@@ -1,0 +1,27 @@
+{
+	"name": "svelte-adapter-executable",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "dist/index.js",
+	"scripts": {
+		
+	},
+	"keywords": [
+		"svelte",
+		"adapter",
+		"executable"
+	],
+	"author": "LeoDog896",
+	"license": "MIT",
+	"devDependencies": {
+		"typescript": "^5.5.3"
+	},
+	"peerDependencies": {
+		"@sveltejs/adapter-node": "^5",
+		"@sveltejs/kit": "^2",
+		"svelte-adapter-bun": "^0.5"
+	},
+	"dependencies": {
+		"tempy": "^3.1.0"
+	}
+}

@@ -1,30 +1,8 @@
 {
-	"name": "svelte-adapter-executable",
-	"version": "1.0.0",
-	"type": "module",
-	"main": "dist/index.js",
-	"scripts": {
-		"format": "biome format --write .",
+    "private": true,
+    "scripts": {
+        "format": "biome format --write .",
 		"lint": "biome lint --write .",
 		"style": "biome check --write ."
-	},
-	"keywords": [
-		"svelte",
-		"adapter",
-		"executable"
-	],
-	"author": "LeoDog896",
-	"license": "MIT",
-	"devDependencies": {
-		"@biomejs/biome": "1.8.3",
-		"typescript": "^5.5.3"
-	},
-	"peerDependencies": {
-		"@sveltejs/adapter-node": "^5",
-		"@sveltejs/kit": "^2",
-		"svelte-adapter-bun": "^0.5"
-	},
-	"dependencies": {
-		"tempy": "^3.1.0"
-	}
+    }
 }
