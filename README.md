@@ -18,5 +18,5 @@ Then, import the adapter as so:
 
 ```ts
 // where sea can also be bun, deno, nexe, or yaopkg.
-import adapter from 'svelte-adapter-executable/adapter/sea';
+import adapter from 'svelte-adapter-executable/sea';
 ```

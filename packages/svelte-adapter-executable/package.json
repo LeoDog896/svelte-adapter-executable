@@ -2,10 +2,35 @@
 	"name": "svelte-adapter-executable",
 	"version": "1.0.0",
 	"type": "module",
-	"main": "dist/index.js",
-	"scripts": {
-		
+	"exports": {
+		"./bun": {
+			"import": "./dist/adapter/bun.js",
+			"types": "./dist/adapter/bun.d.ts"
+		},
+		"./deno": {
+			"import": "./dist/adapter/deno.js",
+			"types": "./dist/adapter/deno.d.ts"
+		},
+		"./nexe": {
+			"import": "./dist/adapter/nexe.js",
+			"types": "./dist/adapter/nexe.d.ts"
+		},
+		"./sea": {
+			"import": "./dist/adapter/sea.js",
+			"types": "./dist/adapter/sea.d.ts"
+		},
+		"./yaopkg": {
+			"import": "./dist/adapter/yaopkg.js",
+			"types": "./dist/adapter/yaopkg.d.ts"
+		}
 	},
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"build": "tsc"
+	},
+	"files": ["dist/**", "README.md", "LICENSE"],
 	"keywords": [
 		"svelte",
 		"adapter",
